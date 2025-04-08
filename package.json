@@ -12,5 +12,9 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": ""
+  "description": "",
+  "devDependencies": {
+    "mocha": "^11.1.0",
+    "sinon": "^20.0.0"
+  }
 }
