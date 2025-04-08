@@ -7,13 +7,14 @@
   },
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "npx mocha test/unitTests/*.test.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
   "devDependencies": {
+    "chai": "^5.2.0",
     "mocha": "^11.1.0",
     "sinon": "^20.0.0"
   }
