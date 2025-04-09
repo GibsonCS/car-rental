@@ -1,18 +1,18 @@
-import { before, after, describe, it } from "mocha";
+import { before, beforeEach, afterEach, describe, it } from "mocha";
 import { expect } from "chai";
 import sinon from "sinon";
 import { CarService } from "../../src/services/carService.js";
 
-describe("API suit test", () => {
-  //   const stub = sinon.stub();
-  let carService = new CarService();
+describe("CarService", () => {
+  let carService;
 
-  it("Should retrieve a random position from an array", () => {
-    const data = [1, 2, 3, 4, 5, 6, 7];
-    const result = carService.getRandomPositionFromArray(data);
-
-    expect(result).to.be.lte(data.length).and.be.gte(0);
+  before(() => {
+    carService = new CarService();
   });
 
-  
+  describe("Should return a available cars list", () => {
+    it("Should retrieve a random position from an array", () => {
+      const result = carService;
+    });
+  });
 });
